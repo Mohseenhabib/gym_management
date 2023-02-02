@@ -1,0 +1,212 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2023-02-02 11:15:30.101392",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "first_name",
+  "middle_name",
+  "last_name",
+  "full_name",
+  "column_break_e6ss",
+  "sex",
+  "dob",
+  "height",
+  "weight",
+  "age_int",
+  "docs_section",
+  "email",
+  "user_id",
+  "mobile",
+  "column_break_4kyq",
+  "id_type",
+  "id_number",
+  "photo",
+  "invite_user",
+  "member_status",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sex",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "description": "In Meters",
+   "fieldname": "height",
+   "fieldtype": "Float",
+   "label": "Height"
+  },
+  {
+   "description": "IN KGS",
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "label": "Weight"
+  },
+  {
+   "fieldname": "age_int",
+   "fieldtype": "Int",
+   "label": "Age"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Read Only",
+   "label": "User ID",
+   "options": "User"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Phone",
+   "label": "Mobile Number",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "id_type",
+   "fieldtype": "Select",
+   "label": "ID Type",
+   "options": "Iqama\nPassport"
+  },
+  {
+   "fieldname": "id_number",
+   "fieldtype": "Data",
+   "label": "ID Number"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "Photo"
+  },
+  {
+   "default": "0",
+   "fieldname": "invite_user",
+   "fieldtype": "Check",
+   "label": "Invite as User"
+  },
+  {
+   "fieldname": "member_status",
+   "fieldtype": "Select",
+   "label": "Member Status",
+   "options": "Active\nCancelled"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "default": "Member-.MM.-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "Member-.MM.-"
+  },
+  {
+   "fieldname": "column_break_e6ss",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "docs_section",
+   "fieldtype": "Section Break",
+   "label": "Docs"
+  },
+  {
+   "fieldname": "column_break_4kyq",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-02 11:42:47.505264",
+ "modified_by": "Administrator",
+ "module": "Gym Management",
+ "name": "Gym Member",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Trainer",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Member",
+   "share": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
