@@ -1,0 +1,25 @@
+{% extends "templates/web.html" %}
+
+{%- block title -%}{{_("Not Found")}}{%- endblock -%}
+
+{% block page_content %}
+
+<script>
+	window.is_404 = true;
+</script>
+
+<div class="error-page">
+	<img class="img-404" src="https://lh5.ggpht.com/-BT2vrN7opxY/T29IOqvfO8I/AAAAAAAAGJQ/_UUXI7_-n7g/image%25255B10%25255D.png?imgmax=800" />
+	<div>
+		<h2 class="mb-1 mt-4">
+			{{ _("OOPS! The Page You Are Looking For Is Not Available Or Renamed.") }}
+		</h2>
+		<div class="text-muted error-text" style="font-size: 27px;">
+			Please <a href="/contact">Contact Us</a> If You Think This Is An Error
+		</div>
+		<div class="mt-6 back-to-home"><a href='/' class='btn btn-primary'>{{ _("Back to Home") }}</a></div>
+		
+	</div>
+</div>
+
+{% endblock %}

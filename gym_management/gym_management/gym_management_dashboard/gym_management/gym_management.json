@@ -1,0 +1,25 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Gym Plans",
+   "width": "Full"
+  },
+  {
+   "chart": "Member chart",
+   "width": "Half"
+  }
+ ],
+ "creation": "2023-02-07 09:15:56.817921",
+ "dashboard_name": "Gym Management",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 1,
+ "is_standard": 1,
+ "modified": "2023-02-07 09:20:52.953236",
+ "modified_by": "Administrator",
+ "module": "Gym Management",
+ "name": "Gym Management",
+ "owner": "Administrator"
+}

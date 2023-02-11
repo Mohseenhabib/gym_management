@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col card">
+            First Name : {{ data.gym_member.first_name }}
+        </div>
+
+        <div class="col card">
+            Last Name : {{ data.gym_member.last_name }}
+        </div>
+        <div class="col card">
+            Status : {{ data.gym_member.member_status }}
+        </div>
+
+    </div>
+
+    <table class="table">
+        <tr>
+            <th>Membership Plan</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Includes Trainer</th>
+            <th>Days Left</th>
+        </tr>
+        {% for m in data.gym_membership %}
+        <tr>
+            <td>{{ m.plan}}</td>
+            <td>{{ m.start_date}}</td>
+            <td>{{ m.end_date}}</td>
+            <td>{{ m.includes_trainer}}</td>
+            <td>{{ m.days_left}}</td>
+        </tr>
+
+        {% endfor %}
+    </table>
+</div>
