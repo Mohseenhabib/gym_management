@@ -47,6 +47,7 @@
    "label": "Comments"
   },
   {
+   "fetch_from": "gym_trainer.email",
    "fieldname": "email",
    "fieldtype": "Data",
    "label": "Email"
@@ -54,11 +55,13 @@
   {
    "fieldname": "route",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "route"
   },
   {
+   "default": "0",
    "fieldname": "is_published",
-   "fieldtype": "Data",
+   "fieldtype": "Check",
    "label": "Is Published"
   },
   {
@@ -72,7 +75,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2023-02-11 01:58:14.526961",
+ "modified": "2023-02-11 19:04:33.998541",
  "modified_by": "Administrator",
  "module": "Gym Management",
  "name": "Gym Trainer Subscription",

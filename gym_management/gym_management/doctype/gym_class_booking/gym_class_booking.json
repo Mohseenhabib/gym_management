@@ -14,6 +14,7 @@
   "status",
   "date",
   "route",
+  "first_name",
   "is_published"
  ],
  "fields": [
@@ -39,16 +40,19 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Confirmed\nCancelled"
+   "options": "\nConfirmed\nCancelled"
   },
   {
+   "fetch_from": "gym_class.class_date",
    "fieldname": "date",
    "fieldtype": "Date",
-   "label": "date"
+   "label": "date",
+   "read_only": 1
   },
   {
    "fieldname": "route",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "route"
   },
   {
@@ -56,13 +60,19 @@
    "fieldname": "is_published",
    "fieldtype": "Check",
    "label": "is published"
+  },
+  {
+   "fetch_from": "gym_member.first_name",
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "first name"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2023-02-07 14:27:14.806100",
+ "modified": "2023-02-11 19:21:23.073276",
  "modified_by": "Administrator",
  "module": "Gym Management",
  "name": "Gym Class Booking",

@@ -25,7 +25,6 @@
   "id_type",
   "id_number",
   "photo",
-  "invite_user",
   "member_status",
   "naming_series"
  ],
@@ -114,12 +113,6 @@
    "label": "Photo"
   },
   {
-   "default": "0",
-   "fieldname": "invite_user",
-   "fieldtype": "Check",
-   "label": "Invite as User"
-  },
-  {
    "fieldname": "member_status",
    "fieldtype": "Select",
    "label": "Member Status",
@@ -154,7 +147,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-02 11:42:47.505264",
+ "modified": "2023-02-11 18:50:19.909286",
  "modified_by": "Administrator",
  "module": "Gym Management",
  "name": "Gym Member",

@@ -13,7 +13,8 @@
   "class_date",
   "trainer",
   "is_published",
-  "route"
+  "route",
+  "class_availability"
  ],
  "fields": [
   {
@@ -38,7 +39,6 @@
    "label": "Class Date"
   },
   {
-   "default": "0",
    "fieldname": "trainer",
    "fieldtype": "Link",
    "label": "Trainer",
@@ -53,12 +53,19 @@
   {
    "fieldname": "route",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "route"
+  },
+  {
+   "fieldname": "class_availability",
+   "fieldtype": "Select",
+   "label": "Class Availability ",
+   "options": "\navailable\nnot available"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-05 10:51:57.365475",
+ "modified": "2023-02-11 19:17:04.842306",
  "modified_by": "Administrator",
  "module": "Gym Management",
  "name": "Class",
