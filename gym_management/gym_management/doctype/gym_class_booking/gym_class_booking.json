@@ -72,7 +72,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2023-02-11 19:21:23.073276",
+ "modified": "2023-02-11 19:36:18.884689",
  "modified_by": "Administrator",
  "module": "Gym Management",
  "name": "Gym Class Booking",
@@ -128,7 +128,6 @@
    "write": 1
   }
  ],
- "route": "class-booking",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
